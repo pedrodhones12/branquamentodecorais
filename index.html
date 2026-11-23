@@ -1,1 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Painel educativo sobre o branqueamento de corais — Ciência é Minha Praia, UESC.">
+<title>Branqueamento de Corais | Ciência é Minha Praia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+:root{--navy:#0A2F51;--turq:#0BBAB9;--slate:#344C5A;--foam:#E4F6F5;--sand:#F7F0E3;--yellow:#F4BE4A;--coral:#F47762;--white:#fff}
+*{box-sizing:border-box}
+html,body{margin:0;background:#dce8e8;color:var(--navy);font-family:'Nunito Sans',Arial,sans-serif}
+.poster{width:900px;min-height:1200px;margin:24px auto;padding:30px;background:var(--foam);overflow:hidden;position:relative}
+header{background:var(--navy);color:white;border-radius:22px;padding:26px 30px 22px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:290px;height:290px;border:2px solid #ffffff25;border-radius:50%;right:-85px;top:-140px;box-shadow:0 0 0 25px #ffffff12,0 0 0 50px #ffffff0a}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:14px;position:relative;z-index:1}
+.brand img{max-height:58px;max-width:180px;object-fit:contain;background:#fff;border-radius:8px;padding:5px}
+.kicker{font-size:13px;font-weight:900;letter-spacing:2px;color:var(--yellow);text-transform:uppercase}
+h1{font-family:'Archivo Black',Impact,sans-serif;font-size:52px;line-height:.98;letter-spacing:-1px;margin:8px 0 10px;max-width:690px}
+.subtitle{font-size:22px;font-weight:800;color:#b9f2ed;margin:0}
+.intro{font-size:15px;line-height:1.45;max-width:720px;margin:14px 0 0;color:#f2ffff}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.hero figure{margin:0;position:relative;height:175px;border-radius:16px;overflow:hidden;background:#c5e3e3}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero figcaption{position:absolute;bottom:0;left:0;right:0;padding:9px 13px;background:linear-gradient(transparent,#06253be8);color:white;font-size:15px;font-weight:900}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.card{background:white;border-radius:16px;padding:15px 17px;border:1.5px solid #c6e7e4;break-inside:avoid}
+.card h2{font-family:'Archivo Black',Impact,sans-serif;font-size:20px;line-height:1.05;margin:0 0 9px;color:var(--navy)}
+.card p{font-size:13.4px;line-height:1.4;margin:5px 0;color:var(--slate)}
+.wide{grid-column:1/-1}
+.tag{display:inline-block;background:var(--turq);color:var(--navy);font-size:10px;font-weight:900;letter-spacing:1px;padding:4px 8px;border-radius:20px;margin-bottom:8px;text-transform:uppercase}
+.fact{background:var(--sand);border-left:6px solid var(--yellow);padding:10px 13px;border-radius:8px;margin-top:9px;font-size:12.5px;line-height:1.35;color:var(--slate)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:8px}
+.step{background:var(--foam);border-radius:11px;padding:9px;text-align:center}
+.step b{display:block;font-size:12px;margin-bottom:4px}
+.step span{font-size:11px;line-height:1.25;display:block;color:var(--slate)}
+.step i{font-style:normal;font-size:22px;display:block;margin-bottom:3px}
+.causes{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.cause{background:var(--foam);border-radius:10px;padding:8px 10px}
+.cause b{font-size:12.5px;display:block}
+.cause span{font-size:11.5px;line-height:1.25;color:var(--slate)}
+.impacts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.impact{border-radius:10px;background:var(--sand);padding:9px}
+.impact b{display:block;font-size:12.5px}
+.impact span{font-size:11.5px;line-height:1.25;color:var(--slate)}
+.actionlist{display:grid;grid-template-columns:1fr 1fr;gap:5px 12px}
+.actionlist div{font-size:12.5px;line-height:1.3;color:var(--slate)}
+.actionlist div:before{content:"✓";font-weight:900;color:#079c98;margin-right:7px}
+.callout{margin-top:10px;background:var(--navy);color:white;padding:12px 16px;border-radius:12px;text-align:center;font-family:'Archivo Black',Impact,sans-serif;font-size:19px}
+.refs{margin-top:13px;padding:12px 15px;background:#d3eeeb;border-radius:13px}
+.refs h3{font-family:'Archivo Black',Impact,sans-serif;font-size:14px;margin:0 0 6px}
+.refs p{font-size:9.5px;line-height:1.35;margin:3px 0;color:var(--slate);overflow-wrap:anywhere}
+footer{display:flex;justify-content:space-between;align-items:center;margin-top:9px;font-size:9px;color:var(--slate);font-weight:800}
+footer img{max-height:33px;max-width:110px;object-fit:contain}
+.note{font-size:10px;color:var(--slate);margin-top:6px}
+@media(max-width:940px){.poster{width:100%;margin:0;padding:18px;min-height:0}h1{font-size:clamp(34px,7vw,52px)}}
+@page{size:900mm 1200mm;margin:0}
+@media print{html,body{background:white;width:900mm;height:1200mm}.poster{width:900mm;height:1200mm;min-height:1200mm;margin:0;padding:10mm;border:0;box-shadow:none;zoom:1.0}.card p{font-size:13.4px}a{color:inherit;text-decoration:none}}
+</style>
+</head>
+<body>
+<main class="poster">
+<header>
+ <div class="brand">
+  <img src="assetes/logo_ciencia_e_minha_praia_recortada.png" alt="Ciência é Minha Praia">
+  <img src="assetes/logo uesc.png" alt="Universidade Estadual de Santa Cruz">
+ </div>
+ <div class="kicker">Ciência é Minha Praia • Divulgação científica</div>
+ <h1>BRANQUEAMENTO<br>DE CORAIS</h1>
+ <p class="subtitle">Quando o oceano esquenta, os recifes perdem suas cores.</p>
+ <p class="intro">Os recifes de coral são ambientes ricos em vida. Quando os corais sofrem estresse — especialmente pelo calor excessivo — podem perder as microalgas que vivem em seus tecidos. Esse fenômeno é chamado de branqueamento.</p>
+</header>
 
+<section class="hero" aria-label="Comparação de corais">
+ <figure><img src="assetes/coral coorido.avif" alt="Recife com corais coloridos"><figcaption>RECIFE SAUDÁVEL</figcaption></figure>
+ <figure><img src="assetes/Branqueamento_dos_corais.webp" alt="Corais esbranquiçados pelo branqueamento"><figcaption>RECIFE COM CORAIS BRANQUEADOS</figcaption></figure>
+</section>
+
+<section class="grid">
+ <article class="card">
+  <span class="tag">01 • Conheça</span>
+  <h2>O que são os corais?</h2>
+  <p>Corais são animais marinhos. Muitos vivem em colônias formadas por pequenos pólipos, que constroem estruturas rígidas de carbonato de cálcio.</p>
+  <p>Em seus tecidos vivem microalgas simbiontes (principalmente da família Symbiodiniaceae). Elas fazem fotossíntese e fornecem parte importante da energia de que os corais precisam; em troca, encontram abrigo e nutrientes.</p>
+  <div class="fact"><b>Uma parceria essencial:</b> coral e microalga mantêm uma relação de simbiose, importante para a sobrevivência de muitas espécies construtoras de recifes.</div>
+ </article>
+ <article class="card">
+  <span class="tag">02 • Entenda</span>
+  <h2>Por que ficam brancos?</h2>
+  <p>Quando submetidos a estresse ambiental, os corais podem perder suas microalgas simbiontes ou os pigmentos delas. Como o tecido do coral é translúcido, o esqueleto branco aparece através dele: é o branqueamento.</p>
+  <p>Com menos algas, o coral perde uma fonte importante de energia e fica mais vulnerável a doenças e à falta de alimento.</p>
+  <div class="fact"><b>Branqueado não significa morto!</b> Se o estresse diminuir e as condições melhorarem, o coral pode recuperar as algas. Se o estresse persistir, pode morrer.</div>
+ </article>
+
+ <article class="card wide">
+  <span class="tag">Como acontece</span>
+  <h2>Do estresse ao branqueamento</h2>
+  <div class="steps">
+   <div class="step"><i>🌞</i><b>1. Estresse térmico</b><span>A água fica quente demais por tempo prolongado, alterando o funcionamento do coral e de suas algas.</span></div>
+   <div class="step"><i>🫧</i><b>2. Perda das algas</b><span>O coral perde microalgas simbiontes e/ou seus pigmentos fotossintéticos.</span></div>
+   <div class="step"><i>🤍</i><b>3. Branqueamento</b><span>O esqueleto claro fica visível através do tecido. O coral fica debilitado.</span></div>
+  </div>
+ </article>
+
+ <article class="card">
+  <span class="tag">03 • Causas</span>
+  <h2>O que provoca o fenômeno?</h2>
+  <div class="causes">
+   <div class="cause"><b>🌡️ Calor dos oceanos</b><span>É o principal fator dos eventos de branqueamento em massa. O aquecimento global aumenta o risco e a intensidade do estresse térmico.</span></div>
+   <div class="cause"><b>☀️ Luz solar intensa</b><span>Pode agravar o estresse, sobretudo quando combinada com temperaturas elevadas.</span></div>
+   <div class="cause"><b>🌧️ Mudanças na salinidade</b><span>Alterações bruscas na quantidade de sal, por exemplo após fortes chuvas, podem estressar os corais.</span></div>
+   <div class="cause"><b>⚠️ Poluição e outros impactos</b><span>Contaminantes, sedimentação e impactos locais reduzem a saúde e a capacidade de recuperação dos recifes.</span></div>
+  </div>
+ </article>
+ <article class="card">
+  <span class="tag">04 • Consequências</span>
+  <h2>Por que isso importa?</h2>
+  <div class="impacts">
+   <div class="impact"><b>🐠 Biodiversidade</b><span>Recifes degradados oferecem menos abrigo, alimento e áreas de reprodução para muitas espécies.</span></div>
+   <div class="impact"><b>🌊 Equilíbrio ecológico</b><span>A perda de corais modifica habitats e relações entre os organismos marinhos.</span></div>
+   <div class="impact"><b>🎣 Pesca e alimentação</b><span>Comunidades que dependem dos recifes e da pesca podem sofrer perdas.</span></div>
+   <div class="impact"><b>🏝️ Turismo e proteção costeira</b><span>A degradação afeta o turismo e reduz serviços naturais prestados pelos recifes.</span></div>
+  </div>
+ </article>
+
+ <article class="card wide">
+  <span class="tag">05 • Ação</span>
+  <h2>Como podemos ajudar a proteger os corais?</h2>
+  <div class="actionlist">
+   <div>Reduzir as emissões de gases de efeito estufa e apoiar soluções climáticas.</div>
+   <div>Não tocar, pisar, retirar ou comprar corais e animais dos recifes.</div>
+   <div>Descartar corretamente o lixo e evitar plástico nas praias e rios.</div>
+   <div>Combater o despejo irregular de esgoto e a poluição da água.</div>
+   <div>Praticar turismo responsável e respeitar áreas protegidas.</div>
+   <div>Valorizar a pesquisa científica, a educação ambiental e a conservação marinha.</div>
+  </div>
+  <div class="callout">Cuidar dos corais é cuidar da vida nos oceanos!</div>
+ </article>
+</section>
+
+<section class="refs">
+ <h3>REFERÊNCIAS CIENTÍFICAS • SAIBA MAIS</h3>
+ <p>NOAA. <i>What is coral bleaching?</i> National Ocean Service. https://oceanservice.noaa.gov/facts/coral_bleach.html</p>
+ <p>NOAA Coral Reef Watch. <i>Coral Bleaching: tutorial and monitoring.</i> https://coralreefwatch.noaa.gov/</p>
+ <p>IPCC. <i>Climate Change 2022: Impacts, Adaptation and Vulnerability</i>, Chapter 3 — Oceans and Coastal Ecosystems. https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/</p>
+ <p>UNEP. <i>Coral reefs.</i> United Nations Environment Programme. https://www.unep.org/</p>
+ <p class="note">Material educativo de divulgação científica. O branqueamento é uma resposta de estresse; suas causas e consequências variam conforme a espécie e as condições ambientais.</p>
+</section>
+<footer>
+ <span>CIÊNCIA • OCEANO • CONSERVAÇÃO</span>
+ <span>UESC — Universidade Estadual de Santa Cruz</span>
+</footer>
+</main>
+</body>
+</html>
