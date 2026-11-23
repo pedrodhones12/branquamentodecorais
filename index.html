@@ -23,10 +23,10 @@ h1{font-family:'Archivo Black',Impact,sans-serif;font-size:52px;line-height:.98;
 .hero figure{margin:0;position:relative;height:175px;border-radius:16px;overflow:hidden;background:#c5e3e3}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}
 .hero figcaption{position:absolute;bottom:0;left:0;right:0;padding:9px 13px;background:linear-gradient(transparent,#06253be8);color:white;font-size:15px;font-weight:900}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-.card{background:white;border-radius:16px;padding:15px 17px;border:1.5px solid #c6e7e4;break-inside:avoid}
-.card h2{font-family:'Archivo Black',Impact,sans-serif;font-size:20px;line-height:1.05;margin:0 0 9px;color:var(--navy)}
-.card p{font-size:13.4px;line-height:1.4;margin:5px 0;color:var(--slate)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:white;border-radius:16px;padding:13px 15px;border:1.5px solid #c6e7e4;break-inside:avoid}
+.card h2{font-family:'Archivo Black',Impact,sans-serif;font-size:19px;line-height:1.05;margin:0 0 9px;color:var(--navy)}
+.card p{font-size:12.7px;line-height:1.32;margin:4px 0;color:var(--slate)}
 .wide{grid-column:1/-1}
 .tag{display:inline-block;background:var(--turq);color:var(--navy);font-size:10px;font-weight:900;letter-spacing:1px;padding:4px 8px;border-radius:20px;margin-bottom:8px;text-transform:uppercase}
 .fact{background:var(--sand);border-left:6px solid var(--yellow);padding:10px 13px;border-radius:8px;margin-top:9px;font-size:12.5px;line-height:1.35;color:var(--slate)}
@@ -47,9 +47,9 @@ h1{font-family:'Archivo Black',Impact,sans-serif;font-size:52px;line-height:.98;
 .actionlist div{font-size:12.5px;line-height:1.3;color:var(--slate)}
 .actionlist div:before{content:"✓";font-weight:900;color:#079c98;margin-right:7px}
 .callout{margin-top:10px;background:var(--navy);color:white;padding:12px 16px;border-radius:12px;text-align:center;font-family:'Archivo Black',Impact,sans-serif;font-size:19px}
-.refs{margin-top:13px;padding:12px 15px;background:#d3eeeb;border-radius:13px}
+.refs{margin-top:10px;padding:10px 13px;background:#d3eeeb;border-radius:13px}
 .refs h3{font-family:'Archivo Black',Impact,sans-serif;font-size:14px;margin:0 0 6px}
-.refs p{font-size:9.5px;line-height:1.35;margin:3px 0;color:var(--slate);overflow-wrap:anywhere}
+.refs p{font-size:9px;line-height:1.25;margin:3px 0;color:var(--slate);overflow-wrap:anywhere}
 .refs a{color:#075f72;font-weight:900;text-decoration:underline;text-underline-offset:2px}.refs a:hover{color:#0a2f51}.refs a:focus-visible{outline:2px solid #0a2f51;outline-offset:2px;border-radius:2px}
 footer{display:flex;justify-content:space-between;align-items:center;margin-top:9px;font-size:9px;color:var(--slate);font-weight:800}
 footer img{max-height:33px;max-width:110px;object-fit:contain}
@@ -79,73 +79,99 @@ footer img{max-height:33px;max-width:110px;object-fit:contain}
 
 <section class="grid">
  <article class="card">
-  <span class="tag">01 • Conheça</span>
-  <h2>O que são os corais?</h2>
-  <p>Corais são animais marinhos. Muitos vivem em colônias formadas por pequenos pólipos, que constroem estruturas rígidas de carbonato de cálcio.</p>
-  <p>Em seus tecidos vivem microalgas simbiontes (principalmente da família Symbiodiniaceae). Elas fazem fotossíntese e fornecem parte importante da energia de que os corais precisam; em troca, encontram abrigo e nutrientes.</p>
-  <div class="fact"><b>Uma parceria essencial:</b> coral e microalga mantêm uma relação de simbiose, importante para a sobrevivência de muitas espécies construtoras de recifes.</div>
+  <span class="tag">01 • Conceito</span>
+  <h2>O que é o branqueamento?</h2>
+  <p>É uma resposta de estresse: o coral perde parte das microalgas simbióticas que vivem em seus tecidos e/ou os pigmentos dessas algas. Com isso, seu tecido fica translúcido e o esqueleto branco aparece.</p>
+  <p>As microalgas são conhecidas popularmente como <b>zooxantelas</b> e pertencem a diferentes grupos, incluindo a família <i>Symbiodiniaceae</i>. Elas fazem fotossíntese e fornecem energia ao coral; em troca, recebem abrigo e nutrientes.</p>
+  <div class="fact"><b>Curiosidade:</b> corais são animais, não plantas nem rochas. Muitos são formados por pólipos que constroem esqueletos de carbonato de cálcio.</div>
  </article>
  <article class="card">
-  <span class="tag">02 • Entenda</span>
-  <h2>Por que ficam brancos?</h2>
-  <p>Quando submetidos a estresse ambiental, os corais podem perder suas microalgas simbiontes ou os pigmentos delas. Como o tecido do coral é translúcido, o esqueleto branco aparece através dele: é o branqueamento.</p>
-  <p>Com menos algas, o coral perde uma fonte importante de energia e fica mais vulnerável a doenças e à falta de alimento.</p>
-  <div class="fact"><b>Branqueado não significa morto!</b> Se o estresse diminuir e as condições melhorarem, o coral pode recuperar as algas. Se o estresse persistir, pode morrer.</div>
- </article>
-
- <article class="card wide">
-  <span class="tag">Como acontece</span>
-  <h2>Do estresse ao branqueamento</h2>
+  <span class="tag">02 • Processo</span>
+  <h2>Como acontece?</h2>
   <div class="steps">
-   <div class="step"><i>🌞</i><b>1. Estresse térmico</b><span>A água fica quente demais por tempo prolongado, alterando o funcionamento do coral e de suas algas.</span></div>
-   <div class="step"><i>🫧</i><b>2. Perda das algas</b><span>O coral perde microalgas simbiontes e/ou seus pigmentos fotossintéticos.</span></div>
-   <div class="step"><i>🤍</i><b>3. Branqueamento</b><span>O esqueleto claro fica visível através do tecido. O coral fica debilitado.</span></div>
+   <div class="step"><i>🌡️</i><b>Estresse</b><span>Calor excessivo ou outras mudanças ambientais afetam a parceria entre coral e alga.</span></div>
+   <div class="step"><i>🫧</i><b>Ruptura da simbiose</b><span>O coral perde algas simbióticas e/ou seus pigmentos.</span></div>
+   <div class="step"><i>🤍</i><b>Branqueamento</b><span>O esqueleto claro fica visível e o coral perde uma importante fonte de energia.</span></div>
   </div>
+  <div class="fact"><b>Importante:</b> o coral branqueado não está necessariamente morto. O branqueamento é um sinal de estresse, não um diagnóstico de morte.</div>
  </article>
-
  <article class="card">
   <span class="tag">03 • Causas</span>
-  <h2>O que provoca o fenômeno?</h2>
+  <h2>O que provoca o branqueamento?</h2>
   <div class="causes">
-   <div class="cause"><b>🌡️ Calor dos oceanos</b><span>É o principal fator dos eventos de branqueamento em massa. O aquecimento global aumenta o risco e a intensidade do estresse térmico.</span></div>
-   <div class="cause"><b>☀️ Luz solar intensa</b><span>Pode agravar o estresse, sobretudo quando combinada com temperaturas elevadas.</span></div>
-   <div class="cause"><b>🌧️ Mudanças na salinidade</b><span>Alterações bruscas na quantidade de sal, por exemplo após fortes chuvas, podem estressar os corais.</span></div>
-   <div class="cause"><b>⚠️ Poluição e outros impactos</b><span>Contaminantes, sedimentação e impactos locais reduzem a saúde e a capacidade de recuperação dos recifes.</span></div>
+   <div class="cause"><b>🌡️ Aquecimento dos oceanos</b><span>É o principal gatilho dos eventos de branqueamento em massa; ondas de calor marinhas elevam o estresse térmico.</span></div>
+   <div class="cause"><b>🏭 Mudanças climáticas</b><span>O aquecimento global aumenta a frequência e a intensidade de temperaturas marinhas extremas.</span></div>
+   <div class="cause"><b>🗑️ Poluição marinha</b><span>Esgoto, resíduos, sedimentos e contaminantes prejudicam a saúde dos recifes e podem agravar o estresse.</span></div>
+   <div class="cause"><b>🧪 Acidificação</b><span>O CO₂ absorvido pelo mar reduz o pH e dificulta a formação dos esqueletos; é uma ameaça associada, não o gatilho térmico típico do branqueamento.</span></div>
+   <div class="cause"><b>☀️ Radiação solar intensa</b><span>A luz muito intensa pode agravar o estresse, especialmente em águas quentes e rasas.</span></div>
+   <div class="cause"><b>🌧️ Alterações ambientais</b><span>Variações de salinidade, turbidez, nutrientes e exposição ao ar em marés muito baixas também podem afetar os corais.</span></div>
   </div>
  </article>
  <article class="card">
-  <span class="tag">04 • Consequências</span>
-  <h2>Por que isso importa?</h2>
+  <span class="tag">04 • Mudanças ambientais</span>
+  <h2>Como as mudanças ambientais se relacionam?</h2>
+  <p>As atividades humanas — sobretudo a queima de combustíveis fósseis e o desmatamento — elevam a concentração de gases de efeito estufa. O oceano absorve grande parte do excesso de calor e também parte do CO₂ emitido.</p>
+  <p>O resultado inclui <b>águas mais quentes</b>, ondas de calor marinhas e <b>acidificação</b>. Em escala local, esgoto, lixo, sedimentos e mudanças na qualidade da água somam pressões sobre os recifes.</p>
+  <div class="fact">A acidificação reduz a disponibilidade de carbonato, dificultando que corais construam e mantenham seus esqueletos. Aquecimento e acidificação podem atuar juntos, tornando os recifes mais vulneráveis.</div>
+ </article>
+ <article class="card">
+  <span class="tag">05 • Consequências</span>
+  <h2>O que acontece com os corais e os recifes?</h2>
   <div class="impacts">
-   <div class="impact"><b>🐠 Biodiversidade</b><span>Recifes degradados oferecem menos abrigo, alimento e áreas de reprodução para muitas espécies.</span></div>
-   <div class="impact"><b>🌊 Equilíbrio ecológico</b><span>A perda de corais modifica habitats e relações entre os organismos marinhos.</span></div>
-   <div class="impact"><b>🎣 Pesca e alimentação</b><span>Comunidades que dependem dos recifes e da pesca podem sofrer perdas.</span></div>
-   <div class="impact"><b>🏝️ Turismo e proteção costeira</b><span>A degradação afeta o turismo e reduz serviços naturais prestados pelos recifes.</span></div>
+   <div class="impact"><b>Perda das algas</b><span>Menos energia obtida pela fotossíntese e, em geral, perda de cor.</span></div>
+   <div class="impact"><b>Enfraquecimento</b><span>Crescimento e reprodução podem diminuir; o coral fica mais vulnerável.</span></div>
+   <div class="impact"><b>Doenças e morte</b><span>O estresse prolongado aumenta a vulnerabilidade a doenças e pode levar à morte.</span></div>
+   <div class="impact"><b>Biodiversidade</b><span>A degradação do recife reduz abrigo, alimento e áreas de reprodução.</span></div>
+   <div class="impact"><b>Desequilíbrio ecológico</b><span>As relações entre espécies e o funcionamento do ecossistema são afetados.</span></div>
+   <div class="impact"><b>Comunidades humanas</b><span>Pesca, turismo e proteção natural da costa podem sofrer prejuízos.</span></div>
   </div>
  </article>
-
- <article class="card wide">
-  <span class="tag">05 • Ação</span>
-  <h2>Como podemos ajudar a proteger os corais?</h2>
+ <article class="card">
+  <span class="tag">06 • Importância</span>
+  <h2>Por que os corais são importantes?</h2>
+  <p>Os recifes oferecem <b>abrigo, alimentação e áreas de reprodução</b> para numerosas espécies marinhas. São fundamentais para a biodiversidade e ajudam a sustentar o equilíbrio dos ecossistemas costeiros.</p>
+  <p>Também apoiam atividades de <b>pesca e turismo</b>, contribuindo para a alimentação, a renda e a cultura de comunidades costeiras.</p>
+  <p>Sua estrutura funciona como uma barreira natural que reduz a energia das ondas e ajuda a proteger praias e regiões costeiras contra a erosão.</p>
+  <div class="fact"><b>Curiosidade:</b> embora ocupem uma pequena parcela do fundo oceânico, os recifes abrigam uma diversidade extraordinária de vida marinha.</div>
+ </article>
+ <article class="card">
+  <span class="tag">07 • Recuperação</span>
+  <h2>É possível recuperar os corais?</h2>
+  <p><b>Sim, em alguns casos.</b> Se o estresse diminuir, a temperatura voltar a condições toleráveis e a qualidade da água melhorar, os corais podem recuperar suas algas simbióticas e suas funções.</p>
+  <p>A recuperação depende da intensidade e duração do evento, da espécie, da disponibilidade de alimento e da saúde do recife. Eventos repetidos ou prolongados podem causar mortalidade e exigir muitos anos de recuperação.</p>
+  <p>Há diferenças entre espécies e colônias na tolerância ao calor. Essa variação, junto à aclimatação e à seleção natural ao longo das gerações, pode contribuir para a resistência — mas não torna os corais imunes às mudanças climáticas.</p>
+  <div class="fact"><b>Branqueamento ≠ morte:</b> um coral pode sobreviver ao branqueamento; se o estresse persistir ou for muito intenso, o risco de morte aumenta.</div>
+ </article>
+ <article class="card">
+  <span class="tag">08 • Conservação</span>
+  <h2>Como podemos proteger os corais?</h2>
   <div class="actionlist">
-   <div>Reduzir as emissões de gases de efeito estufa e apoiar soluções climáticas.</div>
-   <div>Não tocar, pisar, retirar ou comprar corais e animais dos recifes.</div>
-   <div>Descartar corretamente o lixo e evitar plástico nas praias e rios.</div>
-   <div>Combater o despejo irregular de esgoto e a poluição da água.</div>
-   <div>Praticar turismo responsável e respeitar áreas protegidas.</div>
-   <div>Valorizar a pesquisa científica, a educação ambiental e a conservação marinha.</div>
+   <div>Reduzir emissões de gases de efeito estufa e apoiar soluções climáticas.</div>
+   <div>Combater o despejo de esgoto, o lixo e a poluição marinha.</div>
+   <div>Proteger áreas de recifes e respeitar regras de conservação.</div>
+   <div>Não tocar, pisar, retirar ou comprar corais e animais do recife.</div>
+   <div>Praticar turismo responsável e escolher atividades de baixo impacto.</div>
+   <div>Fortalecer a educação ambiental e compartilhar informação científica.</div>
+   <div>Apoiar pesquisas, restauração e monitoramento dos recifes.</div>
+   <div>Valorizar comunidades costeiras e o uso sustentável dos recursos marinhos.</div>
   </div>
+ </article>
+ <article class="card wide">
+  <span class="tag">Mensagem de conscientização</span>
+  <h2>O futuro dos recifes também depende das nossas escolhas.</h2>
+  <p>Proteger os corais é preservar a biodiversidade, os modos de vida costeiros e a saúde dos oceanos. Ciência, políticas ambientais e atitudes cotidianas precisam caminhar juntas.</p>
   <div class="callout">Cuidar dos corais é cuidar da vida nos oceanos!</div>
  </article>
 </section>
 
 <section class="refs">
- <h3>REFERÊNCIAS CIENTÍFICAS • SAIBA MAIS</h3>
- <p>NOAA. <i>What is coral bleaching?</i> National Ocean Service. <a href="https://oceanservice.noaa.gov/facts/coral_bleach.html" target="_blank" rel="noopener noreferrer">Acessar a referência</a></p>
- <p>NOAA Coral Reef Watch. <i>Coral Bleaching: tutorial and monitoring.</i> <a href="https://coralreefwatch.noaa.gov/" target="_blank" rel="noopener noreferrer">Acessar o portal de monitoramento</a></p>
- <p>IPCC. <i>Climate Change 2022: Impacts, Adaptation and Vulnerability</i>, Chapter 3 — Oceans and Coastal Ecosystems. <a href="https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/" target="_blank" rel="noopener noreferrer">Ler o capítulo</a></p>
- <p>UNEP. <i>Coral reefs.</i> United Nations Environment Programme. <a href="https://www.unep.org/" target="_blank" rel="noopener noreferrer">Acessar o site da UNEP</a></p>
- <p class="note">Material educativo de divulgação científica. O branqueamento é uma resposta de estresse; suas causas e consequências variam conforme a espécie e as condições ambientais.</p>
+ <h3>REFERÊNCIAS CIENTÍFICAS • CLIQUE PARA SABER MAIS</h3>
+ <p>NOAA — National Ocean Service. <i>What is coral bleaching?</i> <a href="https://oceanservice.noaa.gov/facts/coral_bleach.html" target="_blank" rel="noopener noreferrer">Consultar explicação sobre branqueamento</a>.</p>
+ <p>NOAA Fisheries. <i>Shallow Coral Reef Habitat</i> — branqueamento, acidificação, poluição e habitat. <a href="https://www.fisheries.noaa.gov/national/habitat-conservation/shallow-coral-reef-habitat" target="_blank" rel="noopener noreferrer">Consultar conteúdo científico</a>.</p>
+ <p>NOAA. <i>Can a coral reef recover from bleaching and other stressful events?</i> <a href="https://oceanservice.noaa.gov/facts/reef-resilience.html" target="_blank" rel="noopener noreferrer">Consultar recuperação e resiliência</a>.</p>
+ <p>NOAA. <i>What are the major threats to corals?</i> <a href="https://oceanservice.noaa.gov/education/tutorial_corals/coral08_climatechange.html" target="_blank" rel="noopener noreferrer">Consultar mudanças climáticas e acidificação</a>.</p>
+ <p>IPCC. <i>Climate Change 2022: Impacts, Adaptation and Vulnerability</i>, Chapter 3 — Oceans and Coastal Ecosystems. <a href="https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/" target="_blank" rel="noopener noreferrer">Ler o capítulo</a>.</p>
+ <p class="note">Material educativo de divulgação científica. “Zooxantelas” é um nome popular/histórico para microalgas simbióticas; diferentes grupos de algas podem viver associados aos corais. A acidificação prejudica principalmente a calcificação e a estrutura dos recifes, enquanto o calor é o principal fator dos eventos de branqueamento em massa.</p>
 </section>
 <footer>
  <span>CIÊNCIA • OCEANO • CONSERVAÇÃO</span>
